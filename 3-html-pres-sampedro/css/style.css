@@ -1,0 +1,93 @@
+
+body, html {
+    height: 100%;
+}
+
+.fs-img1 { 
+    /* The image used */
+    background-image: url("/img/tapwater.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.black-transparent {
+    background-color: rgba(0,0,0,0.5)
+}
+
+h1 {
+    font-family: 'PT Serif', serif;
+}
+
+h2 {
+    font-family: 'PT Serif', serif;
+    font-size: 100px;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+p {
+    padding: 5px 50px 5px 100px
+}
+
+img {
+    max-width: 100%
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+@media (max-width:600px) {
+    #myVideo {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        min-width: 100%; 
+        height: 100%;
+    } 
+}
+
+@media (max-width:1920px) {
+    #myVideo {
+        position: fixed;
+        left: 0;
+        top: -10%;
+        min-width: 100%; 
+        min-height: 100%;
+    }
+}
